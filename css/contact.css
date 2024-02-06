@@ -1,0 +1,55 @@
+.contact-wrapper {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 2rem;
+}
+
+.contact-wrapper .contact-box {
+    display: grid;
+    grid-template-rows: auto auto;
+    border-radius: 1rem;
+    border: 2px var(--main-color) solid;
+    background-color: var(--main-color);
+}
+
+.contact-box .text-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 0.8rem;
+    border: 2px var(--main-color) solid;
+    background-color: var(--first-bg-color);
+}
+
+.contact-box .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-box .text,
+.contact-box .icons {
+    text-align: center;
+}
+
+.contact-box .icons {
+    color: var(--main-color);
+}
+
+.contact-box .icons i {
+    font-size: 3rem;
+}
+
+.contact-box .info {
+    padding: 0.5rem;
+    color: var(--text-color);
+}
+
+.contact-box .link {
+    text-align: center;
+}
+
+.contact-box .link a {
+    text-decoration: none;
+    color: var(--text-color);
+}
