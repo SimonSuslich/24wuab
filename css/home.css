@@ -42,7 +42,7 @@
     font-family: "Comfortaa", sans-serif;
     border-radius: 1rem;
     margin-right: 0.5rem;
-    width: 65   vw;
+    width: 65 vw;
 }
 
 .landing button {
@@ -66,4 +66,3 @@
 .landing .image-box img {
     width: 80vw;
 }
-

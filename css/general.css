@@ -11,7 +11,6 @@
     border: 0;
     outline: none;
     scroll-behavior: smooth;
-    /* font-family: 'Montserrat Alternates', sans-serif; */
 }
 
 :root {
@@ -44,7 +43,7 @@ span.main-color {
 
 
 section {
-    min-height: calc(100vh - 6rem);
+    min-height: 100vh;
     padding: 4rem 1rem 2rem;
 }
 
@@ -85,7 +84,7 @@ menu ul li {
 }
 
 .show {
-    top: calc(3rem - 2vh);
+    top: calc(4rem - 2vh);
 }
 
 .fade-menu {
@@ -110,7 +109,7 @@ menu ul li {
 nav {
     position: fixed;
     z-index: 20;
-    height: 3rem;
+    height: 4rem;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -134,8 +133,14 @@ nav .links {
     display: none;
 }
 
+nav .menu-button {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
 nav .menu-button i {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 nav .menu-button .bx-x {
@@ -147,5 +152,5 @@ nav .menu-button .bx-menu {
 }
 
 nav .empty {
-    width: 3rem;
+    width: 4rem;
 }
