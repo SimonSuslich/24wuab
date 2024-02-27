@@ -8,7 +8,7 @@
 }
 
 .landing .left-box {
-    height: 30vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -16,6 +16,7 @@
 
 .landing .left-box .text-box {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .landing .left-box .search-bar {
@@ -32,6 +33,7 @@
     margin-top: 0;
     font-size: 1.236rem;
     letter-spacing: 0.225rem;
+    font-weight: 300;
 }
 
 .landing input {
@@ -42,7 +44,7 @@
     font-family: "Comfortaa", sans-serif;
     border-radius: 1rem;
     margin-right: 0.5rem;
-    width: 65 vw;
+    width: 65vw;
 }
 
 .landing button {
@@ -64,5 +66,58 @@
 }
 
 .landing .image-box img {
-    width: 80vw;
+    height: 60vw;
+}
+
+@media screen and (min-width: 650px) {
+    .landing {
+        flex-direction: row;
+    }
+
+    .landing .image-box img {
+        height: 30vh;
+    }
+
+    .landing {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-items: center;
+    }
+
+    .landing h1 {
+        font-size: 2rem;
+    }
+
+    .landing h2 {
+        font-size: 1.236rem;
+    }
+
+    .landing .text-box {
+        /* background-color: navy; */
+        text-align: left;
+    }
+
+
+    .landing .search-bar input {
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width: 880px) {
+
+    .landing .image-box img {
+        height: 40vh;
+    }
+
+    .landing h1 {
+        font-size: 3rem;
+    }
+
+    .landing h2 {
+        font-size: 1.854rem;
+    }
+
+    .landing .left-box .text-box {
+        margin-bottom: 3rem;
+    }
 }
