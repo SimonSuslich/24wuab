@@ -64,7 +64,7 @@
 }
 
 .contact-box {
-    min-height: 35vh;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -96,13 +96,13 @@
     display: grid;
     row-gap: 1rem;
     padding: 0 1rem;
+    place-items: center;
 }
 
 .contact-box a {
     color: var(--text-color);
     text-decoration: none;
-    display: flex;
-    justify-content: center;
+    width: min-content;
 }
 
 .contact-box .text-info h2 {
