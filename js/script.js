@@ -1,3 +1,5 @@
+
+
 let menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", showMenu);
 
@@ -28,9 +30,10 @@ function showMenu() {
     xButton.style.display = "block";
   }
 
-
-
-
 };
 
 
+window.onscroll = () => {
+  let navbar = document.querySelector('nav');
+  navbar.classList.toggle('sticky', window.scrollY > 100);
+};

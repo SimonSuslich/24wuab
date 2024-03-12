@@ -113,8 +113,13 @@ nav {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-color: var(--first-bg-color);
+    background-color: none;
     padding: 0 1rem;
+    transition: 0.3s;
+}
+
+nav.sticky {
+    background-color: var(--first-bg-color);
 }
 
 nav .empty {
