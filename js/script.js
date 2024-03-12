@@ -1,10 +1,10 @@
-
-
 let menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", showMenu);
 
 let layer = document.querySelector(".fade-menu");
 layer.addEventListener("click", showMenu);
+
+let isOpened = false;
 
 let contactIcons = document.querySelectorAll(".icons i"); // select all contact icons
 contactIcons.forEach(icon => {
@@ -16,6 +16,7 @@ contactIcons.forEach(icon => {
 });
 
 function showMenu() {
+  isOpened = !isOpened;
   let nav = document.querySelector("menu");
   nav.classList.toggle("show");
   layer.classList.toggle("visible");
@@ -36,4 +37,8 @@ function showMenu() {
 window.onscroll = () => {
   let navbar = document.querySelector('nav');
   navbar.classList.toggle('sticky', window.scrollY > 100);
+
+  if (isOpened) {
+    showMenu();
+  };
 };

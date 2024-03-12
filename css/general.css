@@ -63,7 +63,7 @@ menu {
     left: 0;
     z-index: 15;
     transition: .3s ease-in-out;
-    padding: 2rem 0 0 0;
+    padding: 3rem 0 0 0;
 }
 
 menu ul li a {
@@ -84,7 +84,7 @@ menu ul li {
 }
 
 .show {
-    top: calc(2rem - 2vh);
+    top: 0;
 }
 
 .fade-menu {
