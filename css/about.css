@@ -4,21 +4,13 @@
 
 }
 
-.about-box {
-  padding: 0 1rem;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
 .about-box img {
   width: 100%;
 }
 
 .landing-about {
   padding: 0;
-  height: auto;
+  height: calc(100vh - 4rem);
 }
 
 .about .image {
@@ -29,42 +21,45 @@
 
 .landing-about .about-background-image {
   background-image: url(/img/about-main.jpg);
-  height: 55vh;
+  height: 100%;
 }
 
 .about-buy .about-buy-image {
-  background-image: url(/img/filling-documents-female-customer-modern-stylish-bearded-businessman-automobile-saloon.jpg);
+  background-image: url(/img/about1.jpg);
   height: 30vh;
 }
 
 .about-sell .about-sell-image {
-  background-image: url(/img/close-up-customer-with-business-person-car-dealership_23-2149117137.jpg);
+  background-image: url(/img/about2.jpg);
+  height: 30vh;
+}
+
+.about-contact .about-contact-image {
+  background-image: url(/img/about3.jpg);
   height: 30vh;
 }
 
 .about .image-layer {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(18, 18, 18, 0.7));
 }
 
-.image-fade {
-  height: 101%;
+.landing-position {
   width: 100%;
-  background: linear-gradient(to top, var(--first-bg-color), transparent);
+  height: 100%;
+  display: grid;
+  place-content: end;
 }
+
+
 
 .landing-about .text-box {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 35vh;
-  margin-bottom: 2rem;
-}
-
-.landing-about .text-box h1 {
-  text-align: center;
+  padding: 8rem 1rem 3rem;
+  display: grid;
+  row-gap: 1rem;
+  height: auto;
+  background: linear-gradient(to bottom, transparent, rgba(18, 18, 18, 0.7), var(--first-bg-color), var(--first-bg-color));
 }
 
 .btn {
@@ -77,25 +72,92 @@
   font-size: 1rem;
 }
 
+.image-fade {
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--first-bg-color));
+}
 
-
-
-
-
-/* .about-grid {
-
+.about-box {
+  max-width: 500px;
+  padding: 0 0 1rem 0;
+  margin: 1rem;
+  height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
-}
-
-.about .box {
-  background-color: var(--third-bg-color);
+  grid-template-rows: 30vh auto;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
   border-radius: 1rem;
-  padding: 0.5rem;
+  border: 3px var(--second-bg-color) solid;
+  transition: 0.3s;
 }
 
-.about .box img {
-  width: 40vw;
-} */
+.about-box:hover {
+  border-color: var(--third-bg-color);
+}
+
+.text-and-button {
+  margin: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 3rem;
+}
+
+.text-and-button .text {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.about-container .about-box .image,
+.about-container .aobut-box .image-layer {
+  height: 30vh;
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 500px) {
+  .landing-position {
+    display: grid;
+    grid-template-columns: 40%;
+    place-content: center start;
+    padding: 0 5%;
+  }
+
+  .landing-about .text-box {
+    background: transparent;
+    row-gap: 2rem;
+    padding: 0;
+  }
+
+  .landing-about .text-box h1 {
+    font-size: 3rem;
+  }
+
+  .landing-about .text-box p {
+    font-size: 1.146rem;
+  }
+
+  .landing-about .about-background-image {
+    background-image: url(/img/about-landing-big.jpg);
+  }
+
+  .about-container {
+    height: calc(100vh - 3rem);
+    padding: 3rem 5% 0;
+  }
+
+  .about-box {
+    height: 80vh;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+
+}

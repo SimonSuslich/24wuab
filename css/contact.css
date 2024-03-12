@@ -71,8 +71,12 @@
     align-items: center;
     border-radius: 1rem;
     background-color: var(--second-bg-color);
-    /* border: 0.25rem solid var(--third-bg-color); */
-    /* box-shadow: 0 0 10rem var(--third-bg-color); */
+    border: 2px solid var(--second-bg-color);
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    border-color: var(--main-color);
 }
 
 .contact-box i {
