@@ -6,7 +6,7 @@ layer.addEventListener("click", showMenu);
 
 let isOpened = false;
 
-let contactIcons = document.querySelectorAll(".icons i"); // select all contact icons
+let contactIcons = document.querySelectorAll(".icons i"); 
 contactIcons.forEach(icon => {
   icon.addEventListener("mouseover", async function (event) {
     icon.classList.toggle("bx-tada");

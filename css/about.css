@@ -87,7 +87,8 @@
   row-gap: 1rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
-  border: 3px var(--second-bg-color) solid;
+  background-color: var(--second-bg-color);
+  border: 3px var(--first-bg-color) solid;
   transition: 0.3s;
 }
 
@@ -108,8 +109,8 @@
   row-gap: 1rem;
 }
 
-.about-container .about-box .image,
-.about-container .aobut-box .image-layer {
+.about-box .image,
+.about-box .image-layer {
   height: 30vh;
   border-radius: 0.9rem 0.9rem 0 0;
 }
@@ -148,16 +149,12 @@
   .about-container {
     height: 100vh;
     padding: 3rem 5% 0;
-  }
-
-  .about-box {
-    height: 80vh;
-  }
-
-  .about-container {
     display: flex;
     flex-direction: row;
     align-items: end;
   }
 
+  .about-box {
+    height: 80vh;
+  }
 }

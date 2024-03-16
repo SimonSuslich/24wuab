@@ -16,7 +16,7 @@
 :root {
     --black-bg-color: #000000;
     --first-bg-color: #121212;
-    --second-bg-color: #011826;
+    --second-bg-color: #1b1b1b;
     --third-bg-color: #024873;
     --main-color: #0396ff;
     --light-main-color: #6CC5D9;
@@ -63,7 +63,7 @@ menu {
     left: 0;
     z-index: 15;
     transition: .3s ease-in-out;
-    padding: 3rem 0 0 0;
+    padding: 4rem 0 0 0;
 }
 
 menu ul li a {
