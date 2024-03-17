@@ -56,6 +56,10 @@
     width: 2.2rem;
 }
 
+.landing button:hover {
+    cursor: pointer;
+}
+
 .landing button i {
     font-size: 1rem;
 }

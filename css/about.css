@@ -52,8 +52,6 @@
   place-content: end;
 }
 
-
-
 .landing-about .text-box {
   padding: 8rem 1rem 3rem;
   display: grid;
@@ -70,6 +68,10 @@
   color: var(--text-color);
   font-weight: 600;
   font-size: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .image-fade {
