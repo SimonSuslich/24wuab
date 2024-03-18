@@ -6,15 +6,6 @@ layer.addEventListener("click", showMenu);
 
 let isOpened = false;
 
-let contactIcons = document.querySelectorAll(".icons i"); 
-contactIcons.forEach(icon => {
-  icon.addEventListener("mouseover", async function (event) {
-    icon.classList.toggle("bx-tada");
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    icon.classList.toggle("bx-tada");
-  });
-});
-
 function showMenu() {
   isOpened = !isOpened;
   let nav = document.querySelector("menu");
@@ -36,9 +27,70 @@ function showMenu() {
 
 window.onscroll = () => {
   let navbar = document.querySelector('nav');
-  navbar.classList.toggle('sticky', window.scrollY > 100);
+  navbar.classList.toggle('sticky', window.scrollY > 25);
 
   if (isOpened) {
     showMenu();
   };
 };
+
+
+
+const productsForSale = [
+  {
+    image: "/img/product1.webp",
+    name: "Volvo v60",
+    priceSEK: '200 000',
+    year: 2019,
+    miles: 4000,
+  },
+  {
+    image: "/img/product2.webp",
+    name: "BMW 3-Series",
+    priceSEK: '250 000',
+    year: 2019,
+    miles: 5400,
+  },
+  {
+    image: "/img/product3.webp",
+    name: "Mercedes-Benz",
+    priceSEK: '300 000 ',
+    year: 2021,
+    miles: 1200,
+  },
+  {
+    image: "/img/product4.webp",
+    name: "Mercedes",
+    priceSEK: '350 000 ',
+    year: 2022,
+    miles: 3500,
+  }
+];
+
+
+
+
+let productsHTML = '';
+productsForSale.forEach((productForSale) => {
+  productsHTML += `
+  <a href="" class="product-link">
+    <div class="product-box">
+      <div class="image-box">
+        <img src="${productForSale.image}" alt="Produkt säljes: ${productForSale.name}">
+      </div>
+      <div class="info-box">
+        <p>${productForSale.name}</p>
+        <ul>
+          <li>${productForSale.year}</li>
+          <li>${productForSale.miles} mil</li>
+          <li>${productForSale.priceSEK} sek</li>
+        </ul>
+      </div>
+    </div>
+  </a>
+  `;
+});
+
+
+
+document.querySelector('.js-products-container').innerHTML = productsHTML;

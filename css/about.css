@@ -60,19 +60,6 @@
   background: linear-gradient(to bottom, transparent, rgba(18, 18, 18, 0.7), var(--first-bg-color), var(--first-bg-color));
 }
 
-.btn {
-  width: 100%;
-  height: 3rem;
-  background-color: var(--main-color);
-  border-radius: 0.25rem;
-  color: var(--text-color);
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.btn:hover {
-  cursor: pointer;
-}
 
 .image-fade {
   height: 100%;

@@ -39,16 +39,6 @@
     place-self: center;
 }
 
-.btn {
-    width: 100%;
-    height: 3rem;
-    background-color: var(--main-color);
-    border-radius: 0.25rem;
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 1rem;
-}
-
 
 .contact-grid {
     height: auto;
@@ -87,6 +77,10 @@
 .contact-box i:hover {
     box-shadow: 0 0 2rem var(--main-color);
 
+}
+
+.contact i:active {
+    transform: scale(0.97);
 }
 
 

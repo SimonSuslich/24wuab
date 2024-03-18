@@ -50,14 +50,23 @@
 .landing button {
     background-color: var(--third-bg-color);
     color: var(--text-color);
+
     border-radius: 50%;
+
     padding: 0.5rem;
     border: none;
     width: 2.2rem;
+    transition: border-radius transform 0.15s ease;
 }
 
 .landing button:hover {
     cursor: pointer;
+    border-radius: 30%;
+
+}
+
+.landing button:active {
+    transform: scale(0.95);
 }
 
 .landing button i {
@@ -71,6 +80,12 @@
 
 .landing .image-box img {
     height: 60vw;
+}
+
+.gradient-transition {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--black-bg-color), var(--first-bg-color));
 }
 
 @media screen and (min-width: 650px) {
