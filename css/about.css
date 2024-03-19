@@ -20,7 +20,7 @@
 }
 
 .landing-about .about-background-image {
-  background-image: url(/img/about-main.jpg);
+  background-image: url(/img/about-landing-mobile.jpg);
   height: 100%;
 }
 
@@ -132,7 +132,7 @@
   }
 
   .landing-about .about-background-image {
-    background-image: url(/img/about-landing-big.jpg);
+    background-image: url(/img/about-landing-desktop.jpg);
   }
 
   .about-container {

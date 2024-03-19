@@ -54,7 +54,7 @@ p {
 .btn {
     width: 100%;
     height: 3rem;
-    background-color: var(--main-color);
+    background-color: var(--third-bg-color);
     border-radius: 0.25rem;
     color: var(--text-color);
     font-weight: 600;
@@ -64,7 +64,7 @@ p {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0 0.5rem var(--main-color);
+    box-shadow: 0 0 0.5rem var(--third-bg-color);
 }
 
 .btn:active {
@@ -135,7 +135,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: none;
-    padding: 0 1rem;
+    padding: 0 5%;
     transition: 0.3s;
 }
 
@@ -209,7 +209,7 @@ nav ul li:hover a::before {
 
 .footer {
     height: 40vh;
-    padding: 1rem;
+    padding: 1rem 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -361,6 +361,7 @@ nav ul li:hover a::before {
     /* FOOTER */
     .footer {
         height: 60vh;
+        padding: 1rem;
     }
 
     .footer .footer-container {
