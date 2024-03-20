@@ -39,7 +39,7 @@ window.onscroll = () => {
 const productsForSale = [
   {
     image: "/img/product1.webp",
-    name: "Volvo v60",
+    name: "Volvo s60",
     priceSEK: '200 000',
     year: 2019,
     miles: 4000,
@@ -64,33 +64,33 @@ const productsForSale = [
     priceSEK: '350 000 ',
     year: 2022,
     miles: 3500,
+  },
+  {
+    image: "/img/product5.webp",
+    name: "BMW",
+    priceSEK: '125 000 ',
+    year: 2019,
+    miles: 3500,
+  },
+  {
+    image: "/img/product6.webp",
+    name: "BMW X1",
+    priceSEK: '220 000 ',
+    year: 2022,
+    miles: 3500,
+  },
+  {
+    image: "/img/product7.webp",
+    name: "BMW",
+    priceSEK: '120 000 ',
+    year: 2014,
+    miles: 3500,
+  },
+  {
+    image: "/img/product8.webp",
+    name: "Mercedes",
+    priceSEK: '242 000 ',
+    year: 2021,
+    miles: 3500,
   }
 ];
-
-
-
-
-let productsHTML = '';
-productsForSale.forEach((productForSale) => {
-  productsHTML += `
-  <a href="" class="product-link">
-    <div class="product-box">
-      <div class="image-box">
-        <img src="${productForSale.image}" alt="Produkt säljes: ${productForSale.name}">
-      </div>
-      <div class="info-box">
-        <p>${productForSale.name}</p>
-        <ul>
-          <li>${productForSale.year}</li>
-          <li>${productForSale.miles} mil</li>
-          <li>${productForSale.priceSEK} sek</li>
-        </ul>
-      </div>
-    </div>
-  </a>
-  `;
-});
-
-
-
-document.querySelector('.js-products-container').innerHTML = productsHTML;
