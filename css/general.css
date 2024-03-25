@@ -19,12 +19,10 @@
     --second-bg-color: #1b1b1b;
     --third-bg-color: #024873;
     --main-color: #0396ff;
-    /* --light-main-color: #6CC5D9; */
     --text-color: #dfdfdf;
 }
 
 html {
-
     overflow-x: hidden;
     text-decoration: none;
     background-color: var(--first-bg-color);
@@ -55,11 +53,14 @@ p {
     width: 100%;
     height: 3rem;
     background-color: var(--third-bg-color);
-    border-radius: 0.25rem;
     color: var(--text-color);
+    border-radius: 0.25rem;
     font-weight: 600;
     font-size: 1rem;
     transition: 0.3s ease;
+    display: grid;
+    place-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn:hover {
@@ -75,7 +76,7 @@ p {
 
 /* MENU */
 
-menu {
+.hamburger-menu {
     height: 50vh;
     width: 100vw;
     background: linear-gradient(to bottom, var(--first-bg-color), var(--first-bg-color), var(--first-bg-color), var(--first-bg-color), var(--first-bg-color), var(--first-bg-color), var(--first-bg-color), transparent);
@@ -83,23 +84,23 @@ menu {
     top: -100vh;
     left: 0;
     z-index: 15;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     padding: 4rem 0 0 0;
 }
 
-menu ul li a {
+.hamburger-menu ul li a {
     color: var(--text-color);
     text-decoration: none;
     font-size: 2rem;
 
 }
 
-menu ul {
+.hamburger-menu ul {
     list-style: none;
     padding: 0;
 }
 
-menu ul li {
+.hamburger-menu ul li {
     text-align: center;
     padding: 1rem;
 }
@@ -117,7 +118,6 @@ menu ul li {
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 10;
-    transition: .3 ease-in-out;
 }
 
 .visible {
@@ -134,7 +134,7 @@ nav {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-color: none;
+    background-color: transparent;
     padding: 0 5%;
     transition: 0.3s;
 }

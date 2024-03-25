@@ -8,7 +8,7 @@ let isOpened = false;
 
 function showMenu() {
   isOpened = !isOpened;
-  let nav = document.querySelector("menu");
+  let nav = document.querySelector(".hamburger-menu");
   nav.classList.toggle("show");
   layer.classList.toggle("visible");
 

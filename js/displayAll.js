@@ -1,8 +1,3 @@
-
-
-
-
-
 let productsHTML = '';
 productsForSale.forEach((productForSale) => {
     productsHTML += `
@@ -23,8 +18,6 @@ productsForSale.forEach((productForSale) => {
     </a>
     `;
 });
-
-
 
 document.querySelector('.js-products-container').innerHTML = productsHTML;
 
